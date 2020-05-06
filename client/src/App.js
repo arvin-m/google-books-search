@@ -1,17 +1,17 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-import Navbar from '../src/components/Navbar/Navbar';
-import Container from '../src/components/Container/Container';
-import Head from '../src/components/Head/Head';
+import {BrowserRouter as Router,Route} from "react-router-dom";
+import Saved from './Pages/SavedPage';
+import Search from './Pages/SearchPage';
 
 function App() {
   return (
-   <React.Fragment>
-     <Navbar/>
-     <Head/>
-     <Container/>
-   </React.Fragment>
+   
+      <Router>
+          <Route path="/" exact component={Search} />
+          <Route path="/search" exact component={Search} />
+          <Route path='/saved' exact component={Saved}/>
+      </Router>
+   
 
   );
 }

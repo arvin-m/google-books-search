@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Container/style.css';
 
-function Container() {
+function Container(props) {
 
 
 
@@ -10,6 +10,7 @@ function Container() {
         
             <div className="container">
                 HELLO GOOGLE
+                {props.child}
             </div>
        
     )
