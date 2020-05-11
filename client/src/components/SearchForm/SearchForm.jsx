@@ -12,11 +12,15 @@ function SearchForm(props) {
         <div className="col-md-6 mb-3 ">
           <label>Search For Book</label>
           <div className="input-group ">
+            <form  onSubmit={(e)=>props.handleSubmit(e)}>
             <input type="text"
               className="form-control shadow-lg p-3 mb-5 bg-white rounded "
               name="search"
               placeholder="Harry Potter"
-              onChange={(event) => props.handleUserSearch(event, event.target.value)} />
+              onChange={(event) => props.handleUserSearch(event, event.target.value)}
+             
+              />
+              </form>
           </div>
         </div>
       </div>
