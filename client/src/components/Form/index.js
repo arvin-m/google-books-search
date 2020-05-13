@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
@@ -8,11 +9,12 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           <strong>Book</strong>
         </label>
         <input
+          style={{backgroundColor:" rgb(99, 172, 85)",color:"white"}}
           className="form-control"
           id="Title"
           type="text"
           value={q}
-          placeholder="Ready Player One"
+          placeholder="Search For Book ..."
           name="q"
           onChange={handleInputChange}
           required
@@ -22,7 +24,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         <button
           onClick={handleFormSubmit}
           type="submit"
-          className="btn btn-lg btn-danger float-right"
+          className="btn btn-dark float-right"
         >
           Search
         </button>
