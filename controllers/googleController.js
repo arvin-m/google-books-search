@@ -1,8 +1,6 @@
 const axios = require("axios");
 const db = require("../models");
 
-//  methods for googleSearch
-
 module.exports = {
   findAll: function(req, res) {
     const { query: params } = req;
