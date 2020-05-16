@@ -43,17 +43,17 @@ function registerValidSW(swUrl) {
           if (installingWorker.state === "installed") {
             if (navigator.serviceWorker.controller) {
              
-              console.log("New content is available; please refresh.");
+              console.log("Service Worker Is Installed.");
             } else {
             
-              console.log("Content is cached for offline use.");
+              console.log("Cached for offline use.");
             }
           }
         };
       };
     })
     .catch(error => {
-      console.error("Error during service worker registration:", error);
+      console.error("Service worker registration Error:", error);
     });
 }
 
