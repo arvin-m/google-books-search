@@ -1,11 +1,12 @@
 footer{
-    margin-top: 1rem;
     padding: 1rem;
     width: 100%;
     background-color:#e31a30e0 !important;
     font-family: 'Jura', sans-serif;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    
+
 }
 .copyRight{
     color: white;
@@ -26,4 +27,7 @@ a{
     font-size: 1.5rem;
     color: #2e8b57;
 
+}
+.push{
+    margin-bottom: 5rem;
 }

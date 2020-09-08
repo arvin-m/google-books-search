@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav/Navbar";
+import Footer from "./components/Footer/index";
 import '../src/App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/saved" component={Saved} />
           <Route component={NoMatch} />
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );

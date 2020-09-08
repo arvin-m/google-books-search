@@ -4,9 +4,10 @@ import './style.css'
 function Footer() {
   return (
     <React.Fragment>
+      
             <div className="push"></div>
             <footer className="footer ">
-                <div className="container-fluid  ">
+                <div className="container-fluid padding ">
                     <div className="row text-center">
                         <div className="col-sm-12 col-md-12">
                         <a className="copyRight col-sm-12 col-md-12 " href="https://arvin-mahmoudi-portfolio.herokuapp.com/" ><span className="fas fa-copyright"></span>Arvin Mahmoudi</a>
@@ -15,6 +16,7 @@ function Footer() {
                     </div>
                 </div>
             </footer>
+            
         </React.Fragment>
    
   );
