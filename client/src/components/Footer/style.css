@@ -4,6 +4,8 @@ footer{
     width: 100%;
     background-color:#e31a30e0 !important;
     font-family: 'Jura', sans-serif;
+    position: absolute;
+    bottom: 0;
 }
 .copyRight{
     color: white;
